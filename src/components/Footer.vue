@@ -35,11 +35,17 @@
                   <v-btn color="white" elevation="0" variant="0"
                     ><v-icon>mdi-instagram</v-icon></v-btn
                   >
-                  <v-btn color="white" elevation="0" variant="0"
+                  <v-btn
+                    href="https://wa.me/+201120082652"
+                    target="_blank"
+                    color="white"
+                    elevation="0"
+                    variant="0"
                     ><v-icon>mdi-whatsapp</v-icon></v-btn
                   >
                   <v-btn
-                    href="mailto:aliens@gmail.com"
+                    href="mailto:alienstech11@gmail.com"
+                    target="_blank"
                     color="white"
                     elevation="0"
                     variant="0"
@@ -49,14 +55,14 @@
                 <div class="footer-content text-center mt-3 mb-2">
                   <h4 class="text-capitalize mt-5 mb-2">egypt - cairo</h4>
                   <p class="text-capitalize mt-3 mb-0 text-white-50">
-                    Business park (Mivida) - 5th settlement, Newcairo
+                    5th settlement, Newcairo - egypt
                   </p>
                   <v-btn
-                    href="tel:+201273530123"
+                    href="tel:+201017437815"
                     class="mt-3 mb-2"
                     variant="0"
                     elevation="0"
-                    >01273530123</v-btn
+                    >01017437815</v-btn
                   >
                 </div>
                 <hr />

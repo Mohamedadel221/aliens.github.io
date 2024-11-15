@@ -39,7 +39,8 @@
               who are we
             </h2>
             <p class="text-capitalize mt-2 mb-0">
-              Byond was founded by a team of entrepreneurs with a unique <br />
+              Byond was founded by a team of entrepreneurs with a unique
+              <br />
               video storytelling perspective and an unmatched commitment to
               <br />
               client satisfaction. Because our goal is to forge partnerships,
@@ -57,7 +58,8 @@
               How We Work
             </h2>
             <p class="text-capitalize mt-2 mb-0">
-              Byond was founded by a team of entrepreneurs with a unique <br />
+              Byond was founded by a team of entrepreneurs with a unique
+              <br />
               video storytelling perspective and an unmatched commitment to
               <br />
               client satisfaction. Because our goal is to forge partnerships,
@@ -353,5 +355,3 @@ export default {
   },
 };
 </script>
-
-<style scoped></style>

@@ -1,7 +1,37 @@
 <template>
   <Navbar />
-  <div class="contact-title mt-15">
-    <h1 class="text-center mt-10 orange-color text-capitalize">contact us</h1>
+  <div class="contact-partent">
+    <v-container>
+      <v-row class="align-center">
+        <v-col cols="12" md="6">
+          <v-img :src="require('@/assets/callman/mancall.png')"></v-img>
+        </v-col>
+        <v-col cols="12" md="6">
+          <div class="title-left-form center">
+            <div class="">
+              <h2 class="mt-3 mb-2 text-capitalize text-center orange-color">
+                Contact Us to get started
+              </h2>
+              <h4 class="mt-5 mb-2 text-center text-capitalize orange-color">
+                we are here for you
+              </h4>
+            </div>
+            <div class="btn-whats-app text-center mt-5 mb-2">
+              <v-btn
+                href="tel:+201017437815"
+                rounded="xl"
+                size="large"
+                color="orange"
+                class="text-capitalize"
+                variant="outlined"
+                ><v-icon color="white" class="mx-1">mdi-phone</v-icon> call us
+                mopile phone</v-btn
+              >
+            </div>
+          </div>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
   <div class="contactus">
     <v-container>
@@ -92,6 +122,7 @@
               </div>
               <div class="btn-whats-app mt-5 mb-2">
                 <v-btn
+                  href="https://wa.me/+201120082652"
                   rounded="xl"
                   size="large"
                   color="black"
@@ -106,15 +137,23 @@
                   Idea Network - EGYPT - UAE - KSA
                 </h2>
                 <h4 class="text-capitalize mt-3 mb-2">
-                  Emaar Mivida, Business Park - 5th settlement, Egypt
+                  5th settlement, Newcairo - egypt
                 </h4>
                 <h4 class="text-capitalize mt-3 mb-0">contact us</h4>
                 <div class="call-btn mt-3">
-                  <v-btn class="orange-color" variant="0">+201273530123</v-btn>
+                  <v-btn
+                    href="tel:+201017437815"
+                    class="orange-color"
+                    variant="0"
+                    >+201017437815</v-btn
+                  >
                 </div>
                 <div class="mail mt-3 mb-2">
-                  <v-btn class="orange-color text-capitalize" variant="0"
-                    >aliens@gmail.com</v-btn
+                  <v-btn
+                    href="mailto:alienstech11@gmail.com"
+                    class="orange-color text-capitalize"
+                    variant="0"
+                    >alienstech11@gmail.com</v-btn
                   >
                 </div>
               </div>
@@ -128,8 +167,9 @@
 </template>
 
 <script>
-import Footer from "@/components/Footer.vue";
 import "@/css/style.css";
+
+import Footer from "@/components/Footer.vue";
 import Navbar from "@/components/Navbar.vue";
 import useVuelidate from "@vuelidate/core";
 import { required, email, maxLength } from "@vuelidate/validators";

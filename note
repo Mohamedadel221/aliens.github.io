@@ -1,0 +1,57 @@
+<template>
+    <v-layout>
+      <div class="navbar-dektop">
+        <v-app-bar app color="black" id="navtop" dark>
+          <!-- Logo or Title -->
+          <v-toolbar-title class="mr-4">
+            <v-img :src="require('@/assets/logo/alineslogo.jpeg')"> </v-img>
+          </v-toolbar-title>
+  
+          <!-- Desktop Links -->
+          <v-spacer></v-spacer>
+          <v-btn
+            @click="this.redTo({ toPage: 'home' })"
+            text
+            class="d-none d-lg-flex text-capitalize"
+            elevation="0"
+            >Home</v-btn
+          >
+          <v-btn text class="d-none d-md-flex text-capitalize" elevation="0"
+            >Services</v-btn
+          >
+          <v-btn
+            @click="this.redTo({ toPage: 'contactUs' })"
+            text
+            class="d-none d-md-flex text-capitalize"
+            elevation="0"
+            >Contact</v-btn
+          >
+  
+          <!-- Mobile Menu Icon -->
+          <v-app-bar-nav-icon
+            @click="drawer = !drawer"
+            class="d-md-none"
+          ></v-app-bar-nav-icon>
+  
+          <!-- Mobile Drawer -->
+          <v-navigation-drawer v-model="drawer" app temporary right>
+            <v-btn
+              @click="this.redTo({ toPage: 'home' })"
+              text
+              class="text-capitalize"
+              elevation="0"
+              >Home</v-btn
+            >
+            <v-btn text class="text-capitalize" elevation="0">Services</v-btn>
+            <v-btn
+              @click="this.redTo({ toPage: 'contactUs' })"
+              text
+              class="text-capitalize"
+              elevation="0"
+              >Contact</v-btn
+            >
+          </v-navigation-drawer>
+        </v-app-bar>
+      </div>
+    </v-layout>
+  </template>
